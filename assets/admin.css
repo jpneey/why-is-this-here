@@ -1,0 +1,137 @@
+.wiith {
+  transform: translateX(-20px);
+  width: calc(100% + 20px);
+}
+.wiith * {
+  box-sizing: border-box;
+}
+.wiith .button {
+  background: #006ba1;
+  color: #fff;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2px;
+  padding: 0 16px;
+}
+.wiith p {
+  color: #757575;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.wiith h2 {
+  color: #1e1e1e;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.wiith .content {
+  margin: auto;
+  width: calc(100% - 60px);
+  max-width: 682px;
+}
+.wiith header {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  background: #fff;
+  border-bottom: 1px solid #dcdcde;
+}
+.wiith header p {
+  margin: 0;
+}
+.wiith main .box {
+  margin: 30px 0;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #dcdcde;
+}
+.wiith main .box > :first-child {
+  margin-top: 0;
+}
+.wiith main .box > :last-child {
+  margin-bottom: 0;
+}
+.wiith main .box.stat-box .stats,
+.wiith main .box.stat-box h2 {
+  width: calc(100% + 60px);
+  transform: translateX(-30px);
+  border-bottom: 1px solid #dcdcde;
+  margin: 0;
+  padding: 30px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.wiith main .box.stat-box .stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  padding: 0;
+}
+.wiith main .box.stat-box .stats .stat {
+  width: 50%;
+  padding: 30px;
+}
+.wiith main .box.stat-box .stats .stat:first-child {
+  border-right: 1px solid #dcdcde;
+}
+.wiith main .box.stat-box .stats .stat span {
+  display: block;
+  margin-bottom: 15px;
+}
+.wiith main .box.stat-box .stats .stat .item-stat {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.wiith main .box.stat-box .stats .stat .item-stat p {
+  margin: 0;
+  margin: 0px;
+  text-wrap: pretty;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+.wiith main .box.stat-box .stats .stat .item-stat b {
+  flex-shrink: 0;
+  margin-left: 30px;
+  padding: 5px;
+  border-radius: 3px;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #f0f0f0;
+  color: #1e1e1e;
+  font-weight: normal;
+}
+.wiith main .box.stat-box .footer {
+  margin-top: 30px;
+}
+.wiith main .box.stat-box .footer .wiih-progress-track {
+  background: #ddd;
+  border-radius: 16px;
+  height: 8px;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+.wiith main .box.stat-box .footer .wiih-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.wiith main .box.stat-box .footer .wiih-progress-fill.wiih-bg-red {
+  background-color: #d63638; /* WordPress Error Red */
+}
+.wiith main .box.stat-box .footer .wiih-progress-fill.wiih-bg-orange {
+  background-color: #d67f05; /* WordPress Warning Orange */
+}
+.wiith main .box.stat-box .footer .wiih-progress-fill.wiih-bg-green {
+  background-color: #00a32a; /* WordPress Success Green */
+}/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,187 @@
+.wiith {
+
+    $border_color: #dcdcde;
+    $container_width: 682px;
+
+    transform: translateX(-20px);
+    width: calc( 100% + 20px );
+
+    $vertical_space: 30px;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .button {
+        background: #006ba1;
+        color: #fff;
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 2px;
+        padding: 0 16px;
+    }
+
+    p {
+        color: #757575;
+        font-size: .8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    h2 {
+        color: #1e1e1e;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .content {
+        margin: auto;
+        width: calc( 100% - 60px );
+        max-width: $container_width;
+    }
+
+    header {
+
+        padding-top: 120px;
+        padding-bottom: $vertical_space;
+        background: #fff;
+
+        border-bottom: 1px solid $border_color;
+
+        h1 {
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    main {
+
+        .box {
+            margin: $vertical_space 0;
+            padding: $vertical_space;
+            background: #fff;
+            border-radius: calc(7px);
+
+            border: 1px solid $border_color;
+
+            & > :first-child {
+                margin-top: 0;
+            }
+
+            & > :last-child {
+                margin-bottom: 0;
+            }
+
+
+            &.stat-box {
+
+                .stats,
+                h2 {
+                    width: calc( 100% + ($vertical_space * 2) );
+                    transform: translateX(-$vertical_space);
+
+                    border-bottom: 1px solid $border_color;
+
+                    margin: 0;
+                    padding: calc( $vertical_space );
+                    padding-top: 0;
+                    padding-bottom: $vertical_space / 1.5;
+                    
+                }
+
+                .stats {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: start;
+
+                    padding: 0;
+
+                    .stat {
+
+                        width: 50%;
+                        padding: $vertical_space;
+                        &:first-child {
+                            border-right: 1px solid $border_color;
+                        }
+
+                        span {
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+
+
+                        .item-stat {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            align-items: start;
+
+                            p {
+                                margin: 0;
+                                margin: 0px;
+                                text-wrap: pretty;
+                                font-size: calc(20px);
+                                font-weight: normal;
+                                line-height: 28px;
+                                color: #1e1e1e;
+                            }
+
+                            b {
+                                flex-shrink: 0;
+                                margin-left: $vertical_space;
+                                padding: 5px;
+                                border-radius: 3px;
+                                height: min-content;
+                                background-color: #f0f0f0;
+                                color: #1e1e1e;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+
+                .footer {
+                    margin-top: $vertical_space;
+
+                    .wiih-progress-track {
+                        background: #ddd;
+                        border-radius: 16px;
+                        height: 8px;
+                        width: 100%;
+                        margin-bottom: 0;
+                        overflow: hidden;
+                        position: relative;
+                    }
+
+                    .wiih-progress-fill {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                    }
+
+                    .wiih-progress-fill.wiih-bg-red {
+                        background-color: #d63638; /* WordPress Error Red */
+                    }
+
+                    .wiih-progress-fill.wiih-bg-orange {
+                        background-color: #d67f05; /* WordPress Warning Orange */
+                    }
+
+                    .wiih-progress-fill.wiih-bg-green {
+                        background-color: #00a32a; /* WordPress Success Green */
+                    }
+                }
+
+            }
+        }
+    }
+
+}
